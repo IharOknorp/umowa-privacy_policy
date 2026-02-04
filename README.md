@@ -1,88 +1,164 @@
 # Umowa AI Privacy Policy
 
-_Updated: 18 November 2024_
+**Updated:** 4 February 2026
 
-Umowa AI (the “App”) is published by Pronka Ihar, operating from Warsaw, Poland (“we”, “us”, “our”).  
-We process personal data in accordance with Regulation (EU) 2016/679 (GDPR), the Polish Personal Data Protection Act, and comparable international privacy regulations, including the UK GDPR, the California Consumer Privacy Act (CCPA/CPRA), Brazil’s LGPD, and other applicable laws.
-
-## 1. Data Controller & Contact
-- **Controller:** Pronka Ihar (individual developer), Warsaw, Poland  
-- **E‑mail:** oknorpCorp@gmail.com  
-- **DPO/Privacy Contact:** Not appointed; the controller can be reached at the e‑mail above.  
-Please include “Privacy” in the subject line when contacting us.
-
-## 2. Scope
-This policy describes how the App handles personal data when you:
-- use the mobile application or web preview,
-- upload or scan contracts for analysis,
-- interact with built-in translation/UI features, and
-- contact our support team.
-
-## 3. Data We Process
-| Category | Details | Source |
-| --- | --- | --- |
-| **Usage/Device Data** | Device model, OS version, crash/error diagnostics, anonymized analytics events. | Collected automatically. |
-| **Document Content** | Text extracted from uploaded PDFs; may contain personal data such as names, PESEL, NIP, IBAN, addresses. | Provided by you. |
-| **Redaction Metadata** | The list of detected PII types, placeholders, summaries, timestamps. | Generated on device. |
-| **Support Information** | E-mail address, screenshots, debugging logs that you voluntarily share. | Provided by you. |
-
-We do **not** require account registration and we do **not** intentionally collect biometric data, special category data, or precise location data.
-
-## 4. How We Process Documents & PII
-- **On-device processing:** OCR, PII detection, and redaction run locally on your device.  
-- **Cloud requests:** Only the redacted text (without detected PII) is sent to OpenAI’s API for contract summarisation. We sign a Data Processing Agreement with OpenAI and use EU-hosted endpoints when available.  
-- **Temporary caching:** Extracted text is held in volatile memory. If you opt in to “Auto-save last session”, the encrypted cache is deleted after 24 hours.  
-- **Manual edits:** Any manual redactions you enter replace the cloud-bound payload. Logs are not uploaded unless you expressly share them via support.
-
-## 5. Purposes & Legal Bases
-| Purpose | Legal Basis |
-| --- | --- |
-| Provide contract redaction & summary features | Art. 6(1)(b) GDPR (performance of a contract: delivering the requested service). |
-| Store minimal settings (language, consent flags) | Art. 6(1)(b) and Art. 6(1)(f) GDPR (legitimate interest in ensuring functionality). |
-| Debugging, security monitoring | Art. 6(1)(f) GDPR (maintaining app integrity). |
-| Support communications | Art. 6(1)(b) GDPR (responding to your inquiries). |
-| Compliance with legal obligations | Art. 6(1)(c) GDPR. |
-
-Where local laws require consent (e.g., certain analytics or transmissions), we request opt-in in advance.
-
-## 6. Data Retention
-- Document content: retained only in volatile memory; optional encrypted cache deleted after 24 hours or when the user taps “Clear Data”.  
-- Support tickets: kept for up to 24 months, unless law requires longer.  
-- Diagnostic logs: anonymized and rotated every 30 days.  
-When retention periods expire, data is securely deleted or anonymized.
-
-## 7. Sharing & International Transfers
-We share data only with:
-1. **OpenAI, L.L.C.** – receives redacted text for AI summarisation. Processing is covered by Standard Contractual Clauses.  
-2. **Expo/EAS & Google Play** – receive build metadata and crash diagnostics.  
-3. **Infrastructure & security vendors** (e.g., AWS, Sentry) strictly as processors under GDPR Art. 28.  
-We do not sell personal data. Cross-border transfers rely on SCCs or other lawful safeguards.
-
-## 8. Data Subject Rights
-Depending on your jurisdiction, you may have the right to:
-- access, rectify, or erase your data;  
-- restrict or object to processing;  
-- portability of data you provided;  
-- withdraw consent at any time;  
-- lodge a complaint with a supervisory authority (in Poland: Urząd Ochrony Danych Osobowych).  
-Because most processing happens on your device, exercising rights usually involves deleting data locally or contacting us for support.
-
-## 9. Security
-- All communications use TLS 1.2+.  
-- Redaction and OCR run offline; only sanitized text leaves the device.  
-- Optional caches and keys are stored via secure OS storage (SecureStore/Keychain/Keystore).  
-- Access to production systems is role-based and audited.
-
-## 10. Children
-The App is not intended for persons under 16. If we learn that we processed minors’ data without proper consent, we will delete it promptly.
-
-## 11. Changes
-We may update this policy to reflect new features or legal requirements. Material changes will be announced in-app and via release notes. The revision date at the top indicates the latest version.
-
-## 12. Contact & Complaints
-For privacy inquiries or to exercise your rights, contact **oknorpCorp@gmail.com**.  
-EU users may lodge complaints with UODO; UK users with the ICO; US users with their state privacy regulator.
+Umowa AI (the “App”) is published by **Pronka Ihar**, operating from Warsaw, Poland (“we”, “us”, “our”).  
+We process personal data in accordance with Regulation (EU) 2016/679 (GDPR), the Polish Personal Data Protection Act, and other applicable privacy laws.
 
 ---
 
-By using Umowa AI you acknowledge that you have read this Privacy Policy. If you do not agree, please uninstall the App and contact us with any concerns.
+## 1. Data Controller & Contact
+
+**Controller:** Pronka Ihar (individual developer), Warsaw, Poland  
+**E-mail:** oknorpCorp@gmail.com  
+**DPO/Privacy Contact:** Not appointed; contact via the e-mail above.  
+Please include **“Privacy”** in the subject line.
+
+---
+
+## 2. Scope
+
+This policy describes how data is handled when you:
+
+- use the mobile application,
+- upload or scan contracts for analysis,
+- use built-in redaction/analysis/rewarded features,
+- contact support.
+
+---
+
+## 3. Data We Process
+
+| Category | Details | Source |
+|---|---|---|
+| Usage/Device Data | Device/OS info, crash/error diagnostics, analytics events | Collected automatically |
+| Document Content | Text extracted from uploaded PDFs; may contain personal data | Provided by you |
+| Redaction Metadata | Detected PII categories, placeholders, summaries, timestamps | Generated on device |
+| Reward/Token Data | Token balance and rewarded-ad outcomes | Generated in app |
+| Support Information | E-mail, screenshots, logs you voluntarily share | Provided by you |
+
+We do not require full account registration. Firebase Authentication may create an **anonymous technical user ID** for secure function access.
+
+---
+
+## 4. How We Process Documents & PII
+
+- **On-device processing:** OCR, PII detection, and redaction are performed locally on your device.
+- **Cloud analysis:** Redacted text is sent to backend endpoints (Firebase Cloud Functions), which call OpenAI for summarization.
+- **Key security:** OpenAI API key is stored server-side as a secret (not in mobile app code).
+- **Manual edits:** If you manually edit/redact text, your edited content is what gets analyzed.
+- **Local data:** Settings and token state are stored locally on device.
+
+---
+
+## 5. Purposes & Legal Bases (GDPR)
+
+| Purpose | Legal Basis |
+|---|---|
+| Provide redaction and AI summary features | Art. 6(1)(b) GDPR (performance of a contract/service) |
+| Store minimal app settings and technical preferences | Art. 6(1)(b) and Art. 6(1)(f) GDPR |
+| Security, abuse prevention, and service reliability | Art. 6(1)(f) GDPR |
+| Support communication | Art. 6(1)(b) GDPR |
+| Compliance obligations | Art. 6(1)(c) GDPR |
+
+Where required by law, consent mechanisms are used.
+
+---
+
+## 6. Data Retention
+
+- **Document content:** processed for requested analysis; not intended for long-term storage by us.
+- **Local app data:** stored on your device until you clear it (or app uninstall).
+- **Support requests:** retained as needed to resolve your request and legal obligations.
+- **Analytics/ads/provider logs:** retained per provider policies and configured retention settings.
+
+---
+
+## 7. Sharing & International Transfers
+
+We share data only with service providers necessary to operate the App:
+
+- **Google Firebase** (Authentication, Cloud Functions, Analytics)
+- **OpenAI** (contract analysis through our backend)
+- **Google AdMob** (rewarded advertising)
+
+We do not sell personal data.  
+International transfers, where applicable, rely on lawful safeguards (including contractual safeguards such as SCCs where relevant).
+
+---
+
+## 8. Advertising & Analytics
+
+The App may use:
+
+- **Firebase Analytics** for product and stability metrics,
+- **AdMob rewarded ads** for token rewards.
+
+On Android, advertising identifiers may be used according to Google Play and AdMob policies and your device/privacy settings.
+
+---
+
+## 9. Security
+
+- TLS encryption for network communication.
+- On-device redaction prior to analysis requests.
+- Server-side secret management for API keys.
+- Access controls and least-privilege approach for backend systems.
+
+---
+
+## 10. Children
+
+The App is not intended for children under 16.  
+If you believe children’s data was processed without proper legal basis, contact us for deletion.
+
+---
+
+## 11. Your Rights
+
+Depending on jurisdiction, you may have rights to:
+
+- access,
+- rectification,
+- erasure,
+- restriction/object,
+- portability,
+- withdrawal of consent (where consent is the basis),
+- complaint to a supervisory authority (Poland: UODO).
+
+---
+
+## 12. Changes to This Policy
+
+We may update this policy due to legal, technical, or product changes.  
+The date at the top shows the latest version.
+
+---
+
+## 13. Data Deletion Requests (Anchor) {#data-deletion}
+
+You can request deletion of data associated with your use of Umowa AI by emailing:
+
+**oknorpCorp@gmail.com**  
+Subject: **Data Deletion Request – Umowa AI**
+
+Please include:
+- your device platform (Android/iOS),
+- approximate date/time of use,
+- any support thread reference (if applicable).
+
+We will review and respond within legally required timelines.  
+You can also immediately remove local app data by using in-app “Clear All Data” and/or uninstalling the app.
+
+---
+
+## 14. Complaints
+
+EU users may complain to **UODO** (Poland).  
+UK users may complain to the **ICO**.  
+Users in other regions may contact their local data protection authority.
+
+---
+
+By using Umowa AI, you acknowledge that you have read this Privacy Policy.
+

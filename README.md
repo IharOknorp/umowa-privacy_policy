@@ -37,7 +37,12 @@ We do not require full account registration. Firebase Authentication may create 
 - Manual edits: If you manually edit/redact text, your edited content is what gets analyzed.
 - Local data: Settings and token state are stored locally on device.
 
-## 5. Purposes & Legal Bases (GDPR)
+## 5. Legal Disclaimer
+- Umowa AI is not a law firm or attorney and does not provide legal advice.
+- AI output is generated with GPT and may be inaccurate or incomplete.
+- You should verify results and consult a qualified attorney for legal decisions.
+
+## 6. Purposes & Legal Bases (GDPR)
 | Purpose | Legal Basis |
 | --- | --- |
 | Provide redaction and AI summary features | Art. 6(1)(b) GDPR (performance of a contract/service) |
@@ -48,13 +53,13 @@ We do not require full account registration. Firebase Authentication may create 
 
 Where required by law, consent mechanisms are used.
 
-## 6. Data Retention
+## 7. Data Retention
 - Document content: processed for requested analysis; not intended for long-term storage by us.
 - Local app data: stored on your device until you clear it (or app uninstall).
 - Support requests: retained as needed to resolve your request and legal obligations.
 - Analytics/ads/provider logs: retained per provider policies and configured retention settings.
 
-## 7. Sharing & International Transfers
+## 8. Sharing & International Transfers
 We share data only with service providers necessary to operate the App:
 
 - Google Firebase (Authentication, Cloud Functions, Analytics)
@@ -64,7 +69,7 @@ We share data only with service providers necessary to operate the App:
 We do not sell personal data.
 International transfers, where applicable, rely on lawful safeguards (including contractual safeguards such as SCCs where relevant).
 
-## 8. Advertising & Analytics
+## 9. Advertising & Analytics
 The App may use:
 
 - Firebase Analytics for product and stability metrics,
@@ -72,17 +77,17 @@ The App may use:
 
 On Android, advertising identifiers may be used according to Google Play and AdMob policies and your device/privacy settings.
 
-## 9. Security
+## 10. Security
 - TLS encryption for network communication.
 - On-device redaction prior to analysis requests.
 - Server-side secret management for API keys.
 - Access controls and least-privilege approach for backend systems.
 
-## 10. Children
+## 11. Children
 The App is not intended for children under 16.
 If you believe children’s data was processed without proper legal basis, contact us for deletion.
 
-## 11. Your Rights
+## 12. Your Rights
 Depending on jurisdiction, you may have rights to:
 
 - access,
@@ -93,12 +98,12 @@ Depending on jurisdiction, you may have rights to:
 - withdrawal of consent (where consent is the basis),
 - complaint to a supervisory authority (Poland: UODO).
 
-## 12. Changes to This Policy
+## 13. Changes to This Policy
 We may update this policy due to legal, technical, or product changes.
 The date at the top shows the latest version.
 
 <a id="data-deletion-requests"></a>
-## 13. Data Deletion Requests (Anchor)
+## 14. Data Deletion Requests (Anchor)
 You can request deletion of data associated with your use of Umowa AI by emailing:
 
 oknorpCorp@gmail.com
@@ -113,10 +118,9 @@ Please include:
 We will review and respond within legally required timelines.
 You can also immediately remove local app data by using in-app “Clear All Data” and/or uninstalling the app.
 
-## 14. Complaints
+## 15. Complaints
 EU users may complain to UODO (Poland).
 UK users may complain to the ICO.
 Users in other regions may contact their local data protection authority.
 
 By using Umowa AI, you acknowledge that you have read this Privacy Policy.
-

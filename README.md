@@ -1,18 +1,18 @@
-Umowa AI Privacy Policy
+Docutero Privacy Policy
 Last updated: March 9, 2026
 
-Umowa AI (“App”) is provided by Pronka Ihar, Warsaw, Poland (“we”, “us”, “our”).
+Docutero (“App”) is provided by Pronka Ihar, Warsaw, Poland (“we”, “us”, “our”).
 
-This Privacy Policy explains how Umowa AI handles data when you use the app.
+This Privacy Policy explains how Docutero handles data when you use the app.
 
 1. Controller and contact
 Controller: Pronka Ihar
 Location: Warsaw, Poland
 Email: oknorpCorp@gmail.com
-Privacy contact: Please use the subject line “Privacy – Umowa AI”.
+Privacy contact: Please use the subject line “Privacy – Docutero”.
 
 2. What the app does
-Umowa AI is an offline OCR scanner. It lets you scan images or PDFs, extract text on your device, optionally redact personal data, and save results locally in your app library.
+Docutero is an offline OCR scanner. It lets you scan images or PDFs, extract text on your device, optionally redact personal data, and save results locally in your app library.
 
 3. Data we process
 A. Data processed locally on your device
